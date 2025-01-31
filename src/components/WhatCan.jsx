@@ -48,9 +48,9 @@ const WhatCan = () => {
               alt="Image 1"
               sx={{
                 width: "100%",
-                height: "auto",
-                objectFit: "cover",
-                maxHeight: "200px", // Keeps image height under control
+                height: "200px", // Fixed height for the image container
+                objectFit: "cover", // Ensures the image covers the area without stretching
+                objectPosition: "top", // Positions the image starting from the top
               }}
             />
             {/* Text Container */}
@@ -95,6 +95,7 @@ const WhatCan = () => {
                 height: "auto",
                 objectFit: "cover",
                 maxHeight: "200px",
+                objectPosition: "top",
               }}
             />
             <Box
