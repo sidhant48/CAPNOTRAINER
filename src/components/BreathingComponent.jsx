@@ -45,82 +45,126 @@ const BreathingComponent = () => {
       {/* Main Section - Left (Image) & Right (Text + CTA) */}
       <Grid
         container
-        spacing={5}
-        alignItems="stretch"
-        sx={{ minHeight: "500px" }}
+        sx={{
+          minHeight: "500px",
+          alignItems: "center",
+          overflow: "hidden",
+        }}
       >
-        {/* Left Side - Image (40% width) */}
+        {/* Left Side - Image */}
         <Grid
           item
           xs={12}
-          md={4} // 40% width on medium screens
+          md={5}
           sx={{
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            height: "100%", // Ensures left side fills 100% of the height
+            height: "100%",
           }}
         >
-          <img
+          <Box
+            component="img"
             src={image5}
             alt="Breathing"
-            style={{ ...styles.largeImage, width: "120%" }} // Increased width for image
+            sx={{
+              width: "100%",
+              height: "auto",
+              maxHeight: "622px",
+              objectFit: "cover", // Ensures image fills the container proportionally
+            }}
           />
         </Grid>
 
-        {/* Right Side - Text + CTA (60% width) */}
+        {/* Right Side - Content */}
         <Grid
           item
           xs={12}
-          md={8} // 60% width on medium screens
+          md={7}
           sx={{
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            height: "100%", // Ensures right side fills 100% of the height
+            height: "100%",
+            background: "#f7f9fc",
           }}
         >
-          <Box sx={{ flex: 1, mb: 10, mt: 6 }}>
-            {/* Intro Text */}
-            <Typography variant="h6">
+          {/* Text Content */}
+          <Box sx={{ padding: "24px" }}>
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: "bold",
+                marginBottom: "16px",
+                lineHeight: "1.5",
+              }}
+            >
               Your breathing isn&apos;t just about oxygen in and carbon dioxide
               out— it&apos;s a complex behavior shaped by triggers, habits, and
               physiology. When misaligned, these habits can:
             </Typography>
 
             {/* Points Section */}
-            <Box sx={styles.pointsContainer}>
-              {points.map((point, index) => (
-                <Grid
-                  container
-                  key={index}
-                  spacing={2}
-                  alignItems="center"
-                  sx={styles.pointItem}
-                >
-                  <Grid item>
-                    <img
-                      src={icons[index]}
-                      alt={`Point ${index + 1}`}
-                      style={styles.icon}
-                    />
-                  </Grid>
-                  <Grid item xs>
-                    <Typography variant="h6" sx={styles.highlightedText}>
-                      {point.title}
-                    </Typography>
-                    <Typography variant="body1" sx={styles.subtitleText}>
-                      {point.subtitle}
-                    </Typography>
-                  </Grid>
+            {points.map((point, index) => (
+              <Grid
+                container
+                key={index}
+                spacing={2}
+                alignItems="center"
+                sx={{
+                  marginBottom: "16px",
+                  padding: "8px",
+                }}
+              >
+                <Grid item>
+                  <Box
+                    component="img"
+                    src={icons[index]}
+                    alt={`Point ${index + 1}`}
+                    sx={{
+                      width: "40px",
+                      height: "40px",
+                      padding: "8px",
+                    }}
+                  />
                 </Grid>
-              ))}
-            </Box>
+                <Grid item xs>
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      fontWeight: "bold",
+                      marginBottom: "4px",
+                      color: "#333333",
+                    }}
+                  >
+                    {point.title}
+                  </Typography>
+                  <Typography variant="body1" sx={{ color: "#666666" }}>
+                    {point.subtitle}
+                  </Typography>
+                </Grid>
+              </Grid>
+            ))}
           </Box>
 
-          {/* CTA Section - Full Width */}
-          <Box sx={styles.ctaBox}>
-            <Typography variant="h6">
+          {/* CTA Section */}
+          <Box
+            sx={{
+              padding: "16px",
+              background: "	#8fc0c7",
+              textAlign: "center",
+            }}
+          >
+            <Typography
+              variant="h6"
+              sx={{
+                fontWeight: "bold",
+                color: "white",
+                lineHeight: "1.5",
+                ml: 2,
+              }}
+              align="left"
+            >
               Millions of people suffer the consequences of poor breathing
               habits. But you don&apos;t have to be one of them. With the
               CapnoTrainer® GO, you&apos;ll unlock a scientifically-backed
@@ -157,7 +201,7 @@ const icons = [image6, image7, image8];
 const styles = {
   image: {
     width: "100px",
-    height: "50px",
+    height: "auto",
     objectFit: "cover",
   },
   largeImage: {
