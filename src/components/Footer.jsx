@@ -57,7 +57,7 @@ const Footer = () => {
           <Grid item xs={12} sm={4}>
             <Box display="flex" flexDirection="column" alignItems="flex-start">
               <Typography variant="h6" fontWeight="bold" mb={1}>
-                Stay on Touch
+                Stay on touch
               </Typography>
               <Box display="flex" gap={2}>
                 <Box
