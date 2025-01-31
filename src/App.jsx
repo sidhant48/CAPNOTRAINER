@@ -5,12 +5,12 @@ import WhatCan from "./components/WhatCan";
 
 const App = () => {
   return (
-    <div>
+    <>
       <BreathingComponent />
       <WhatCan />
       <KeyFeature />
       <Footer />
-    </div>
+    </>
   );
 };
 
