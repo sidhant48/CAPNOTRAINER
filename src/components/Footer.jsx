@@ -7,21 +7,26 @@ import img5 from "../assets/12.png";
 
 const Footer = () => {
   return (
-    <Box component="footer" sx={{ backgroundColor: "#f8f8f8", py: 4 }}>
+    <Box component="footer" sx={{ py: { xs: 3, sm: 4 } }}>
       <Container>
-        <Grid container spacing={30} justifyContent="center">
+        <Grid
+          container
+          spacing={{ xs: 3, sm: 4, md: 25 }} // Equal spacing between grids
+          justifyContent="space-between" // Equal space between grid items
+        >
+          {/* Logo and description */}
           <Grid item xs={12} sm={4}>
             <Box display="flex" flexDirection="column" alignItems="flex-start">
               <Box
                 component="img"
                 src={img1}
                 alt="Footer Logo"
-                sx={{ width: "100%", height: 80 }}
+                sx={{ width: "100%", height: { xs: 60, sm: 80 } }}
               />
               <Typography
                 variant="body2"
                 textAlign="left"
-                sx={{ color: "gray" }}
+                sx={{ color: "gray", mt: 2 }}
               >
                 Join us on a journey towards a healthier, balanced life - where
                 each inhale and exhale contributes to your overall sense of
@@ -30,55 +35,62 @@ const Footer = () => {
             </Box>
           </Grid>
 
-          <Grid item xs={12} sm={4} sx={{ mt: 2 }}>
-            <Typography variant="h6" fontWeight="bold" mb={1}>
-              Contact
-            </Typography>
-            <Typography variant="body2" sx={{ color: "gray" }}>
-              Phone
-            </Typography>
-            <Typography variant="body2" sx={{ color: "gray" }}>
-              Email
-            </Typography>
-            <Typography variant="body2" sx={{ color: "gray" }}>
-              Location
-            </Typography>
+          {/* Contact section */}
+          <Grid item xs={12} sm={4}>
+            <Box display="flex" flexDirection="column" alignItems="flex-start">
+              <Typography variant="h6" fontWeight="bold" mb={1}>
+                Contact
+              </Typography>
+              <Typography variant="body2" sx={{ color: "gray", mb: 1 }}>
+                Phone
+              </Typography>
+              <Typography variant="body2" sx={{ color: "gray", mb: 1 }}>
+                Email
+              </Typography>
+              <Typography variant="body2" sx={{ color: "gray", mb: 1 }}>
+                Location
+              </Typography>
+            </Box>
           </Grid>
 
-          <Grid item xs={12} sm={4} sx={{ mt: 2 }}>
-            <Typography variant="h6" fontWeight="bold" mb={1}>
-              Stay in Touch
-            </Typography>
-            <Box display="flex" gap={2}>
-              <Box
-                component="img"
-                src={img2}
-                alt="Facebook"
-                sx={{ width: 30, height: 30 }}
-              />
-              <Box
-                component="img"
-                src={img3}
-                alt="Twitter"
-                sx={{ width: 30, height: 30 }}
-              />
-              <Box
-                component="img"
-                src={img4}
-                alt="LinkedIn"
-                sx={{ width: 30, height: 30 }}
-              />
-              <Box
-                component="img"
-                src={img5}
-                alt="Instagram"
-                sx={{ width: 30, height: 30 }}
-              />
+          {/* Social media links */}
+          <Grid item xs={12} sm={4}>
+            <Box display="flex" flexDirection="column" alignItems="flex-start">
+              <Typography variant="h6" fontWeight="bold" mb={1}>
+                Stay on Touch
+              </Typography>
+              <Box display="flex" gap={2}>
+                <Box
+                  component="img"
+                  src={img2}
+                  alt="Facebook"
+                  sx={{ width: 30, height: 30 }}
+                />
+                <Box
+                  component="img"
+                  src={img3}
+                  alt="Twitter"
+                  sx={{ width: 30, height: 30 }}
+                />
+                <Box
+                  component="img"
+                  src={img4}
+                  alt="LinkedIn"
+                  sx={{ width: 30, height: 30 }}
+                />
+                <Box
+                  component="img"
+                  src={img5}
+                  alt="Instagram"
+                  sx={{ width: 30, height: 30 }}
+                />
+              </Box>
             </Box>
           </Grid>
         </Grid>
 
-        <Box mt={10} textAlign="center">
+        {/* Footer copyright */}
+        <Box mt={6} textAlign="center">
           <Typography variant="body2" color="textSecondary">
             @2024 BreatheMatters. All rights reserved.
           </Typography>
