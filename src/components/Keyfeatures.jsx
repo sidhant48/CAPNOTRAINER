@@ -34,7 +34,7 @@ const KeyFeature = () => {
   ];
 
   return (
-    <Container sx={{ mb: 10 }}>
+    <Container sx={{ mb: 5 }}>
       <Typography
         sx={{
           fontWeight: "bold",
