@@ -9,24 +9,59 @@ import image7 from "../assets/26.png";
 import image8 from "../assets/21.png";
 
 const BreathingComponent = () => {
+  const points = [
+    {
+      title: "Compromise your health",
+      subtitle: "Triggering anxiety, fatigue, and physical discomfort.",
+    },
+    {
+      title: "Disrupt your performance",
+      subtitle:
+        "Causing focus deficits, memory issues, and suboptimal endurance.",
+    },
+    {
+      title: "Exacerbate existing conditions",
+      subtitle: "Like asthma, chronic pain, and even stress-related disorders.",
+    },
+  ];
+
+  const icons = [image6, image7, image8];
+
   return (
     <Container sx={{ py: 5 }}>
       {/* Top Section - Display 4 Images in a Row */}
       <Box
         display="flex"
         justifyContent="center"
-        gap={24}
+        gap={14} // Reduce gap for better spacing
         sx={{ flexWrap: "wrap", mb: 5 }}
       >
         {[image1, image2, image3, image4].map((img, index) => (
-          <img
+          <Box
             key={index}
-            src={img}
-            alt={`Image ${index + 1}`}
-            style={styles.image}
-          />
+            sx={{
+              width: "200px", // Set a max width for each image
+              height: "100px", // Adjust height as needed
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+              borderRadius: "8px", // Optional rounded corners
+            }}
+          >
+            <img
+              src={img}
+              alt={`Image ${index + 1}`}
+              style={{
+                maxWidth: "100%",
+                maxHeight: "100%",
+                objectFit: "contain", // Ensures the image is fully visible
+              }}
+            />
+          </Box>
         ))}
       </Box>
+
       <Typography
         sx={{
           fontWeight: "bold",
@@ -175,69 +210,6 @@ const BreathingComponent = () => {
       </Grid>
     </Container>
   );
-};
-
-// Data for Points
-const points = [
-  {
-    title: "Compromise your health",
-    subtitle: "Triggering anxiety, fatigue, and physical discomfort.",
-  },
-  {
-    title: "Disrupt your performance",
-    subtitle:
-      "Causing focus deficits, memory issues, and suboptimal endurance.",
-  },
-  {
-    title: "Exacerbate existing conditions",
-    subtitle: "Like asthma, chronic pain, and even stress-related disorders.",
-  },
-];
-
-// Icons for Each Point
-const icons = [image6, image7, image8];
-
-// Styles
-const styles = {
-  image: {
-    width: "100px",
-    height: "auto",
-    objectFit: "cover",
-  },
-  largeImage: {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-  },
-  icon: {
-    width: "40px",
-    height: "40px",
-  },
-  highlightedText: {
-    fontWeight: "bold",
-    color: "black",
-  },
-  subtitleText: {
-    color: "black", // Black subtitle text
-  },
-  pointsContainer: {
-    display: "flex",
-    flexDirection: "column",
-    flex: 1,
-    justifyContent: "space-around",
-  },
-  pointItem: {
-    display: "flex",
-    alignItems: "center",
-    flexWrap: "nowrap",
-  },
-  ctaBox: {
-    backgroundColor: "#A4DDED",
-    color: "white",
-    padding: "16px",
-    textAlign: "center",
-    width: "100%", // Full width CTA background
-  },
 };
 
 export default BreathingComponent;
