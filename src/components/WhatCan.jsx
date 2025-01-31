@@ -10,19 +10,19 @@ const WhatCan = () => {
       <Typography
         sx={{
           fontWeight: "bold",
-          fontSize: { xs: "20px", sm: "24px", md: "30px" }, // Adjusted font size for different screen sizes
+          fontSize: { xs: "20px", sm: "24px", md: "30px" },
           textAlign: "center",
-          mb: { xs: 3, sm: 4 }, // Responsive margin below the title
+          mb: { xs: 3, sm: 4 },
         }}
       >
         WHAT CAN THE CAPNOTRAINER
         <Box
           component="span"
           sx={{
-            fontSize: { xs: "14px", sm: "18px" }, // Responsive font size for the ® symbol
+            fontSize: { xs: "14px", sm: "18px" },
             position: "relative",
-            top: { xs: "-4px", sm: "-7px" }, // Adjust the position of the ® symbol for smaller screens
-            ml: "2px", // Small left margin for spacing
+            top: { xs: "-4px", sm: "-7px" },
+            ml: "2px",
           }}
         >
           ®
@@ -36,7 +36,7 @@ const WhatCan = () => {
           <Box
             display="flex"
             flexDirection="column"
-            height="100%"
+            height="470px" // Reduced the height slightly
             borderRadius="12px"
             overflow="hidden"
             boxShadow={2}
@@ -48,9 +48,9 @@ const WhatCan = () => {
               alt="Image 1"
               sx={{
                 width: "100%",
-                height: "200px", // Fixed height for the image container
-                objectFit: "cover", // Ensures the image covers the area without stretching
-                objectPosition: "top", // Positions the image starting from the top
+                height: "60%", // Adjusted the image height to take up 52% of the container's height
+                objectFit: "cover",
+                objectPosition: "top",
               }}
             />
             {/* Text Container */}
@@ -58,11 +58,12 @@ const WhatCan = () => {
               sx={{
                 backgroundColor: "teal",
                 color: "white",
-                height: "100%",
+                height: "40%", // Adjusted the text height to take up 48% of the container's height
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                padding: 2,
+                paddingY: 1, // Reduced vertical padding
+                paddingX: 2,
               }}
             >
               <Typography variant="h6" gutterBottom>
@@ -76,12 +77,12 @@ const WhatCan = () => {
           </Box>
         </Grid>
 
-        {/* Repeat the above structure for other containers */}
+        {/* Second Container */}
         <Grid item xs={12} sm={6} md={3}>
           <Box
             display="flex"
             flexDirection="column"
-            height="100%"
+            height="470px" // Reduced the height slightly
             borderRadius="12px"
             overflow="hidden"
             boxShadow={2}
@@ -92,9 +93,8 @@ const WhatCan = () => {
               alt="Image 2"
               sx={{
                 width: "100%",
-                height: "auto",
+                height: "60%",
                 objectFit: "cover",
-                maxHeight: "200px",
                 objectPosition: "top",
               }}
             />
@@ -102,11 +102,12 @@ const WhatCan = () => {
               sx={{
                 backgroundColor: "teal",
                 color: "white",
-                height: "100%",
+                height: "40%", // Adjusted the text height to take up 48% of the container's height
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                padding: 2,
+                paddingY: 1, // Reduced vertical padding
+                paddingX: 2,
               }}
             >
               <Typography variant="h6" gutterBottom>
@@ -120,11 +121,12 @@ const WhatCan = () => {
           </Box>
         </Grid>
 
+        {/* Third Container */}
         <Grid item xs={12} sm={6} md={3}>
           <Box
             display="flex"
             flexDirection="column"
-            height="100%"
+            height="470px" // Reduced the height slightly
             borderRadius="12px"
             overflow="hidden"
             boxShadow={2}
@@ -135,20 +137,21 @@ const WhatCan = () => {
               alt="Image 3"
               sx={{
                 width: "100%",
-                height: "auto",
+                height: "60%", // Adjusted the image height to take up 52% of the container's height
                 objectFit: "cover",
-                maxHeight: "200px",
+                objectPosition: "center",
               }}
             />
             <Box
               sx={{
                 backgroundColor: "teal",
                 color: "white",
-                height: "100%",
+                height: "40%", // Adjusted the text height to take up 48% of the container's height
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                padding: 2,
+                paddingY: 1, // Reduced vertical padding
+                paddingX: 2,
               }}
             >
               <Typography variant="h6" gutterBottom>
@@ -162,11 +165,12 @@ const WhatCan = () => {
           </Box>
         </Grid>
 
+        {/* Fourth Container */}
         <Grid item xs={12} sm={6} md={3}>
           <Box
             display="flex"
             flexDirection="column"
-            height="100%"
+            height="470px" // Reduced the height slightly
             borderRadius="12px"
             overflow="hidden"
             boxShadow={2}
@@ -177,20 +181,21 @@ const WhatCan = () => {
               alt="Image 4"
               sx={{
                 width: "100%",
-                height: "auto",
+                height: "60%", // Adjusted the image height to take up 52% of the container's height
                 objectFit: "cover",
-                maxHeight: "200px",
+                objectPosition: "center",
               }}
             />
             <Box
               sx={{
                 backgroundColor: "teal",
                 color: "white",
-                height: "100%",
+                height: "40%", // Adjusted the text height to take up 48% of the container's height
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                padding: 2,
+                paddingY: 1, // Reduced vertical padding
+                paddingX: 2,
               }}
             >
               <Typography variant="h6" gutterBottom>
