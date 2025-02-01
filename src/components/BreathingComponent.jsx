@@ -29,24 +29,23 @@ const BreathingComponent = () => {
 
   return (
     <Container sx={{ py: 5 }}>
-      {/* Top Section - Display 4 Images in a Row */}
       <Box
         display="flex"
         justifyContent="center"
-        gap={{ xs: 4, sm: 8, md: 14 }} // Adjust gap based on screen size
+        gap={{ xs: 4, sm: 8, md: 14 }}
         sx={{ flexWrap: "wrap", mb: 5 }}
       >
         {[image1, image2, image3, image4].map((img, index) => (
           <Box
             key={index}
             sx={{
-              width: { xs: "120px", sm: "150px", md: "200px" }, // Adjust image size for small screens
-              height: { xs: "80px", sm: "100px", md: "100px" }, // Adjust height for small screens
+              width: { xs: "120px", sm: "150px", md: "200px" },
+              height: { xs: "80px", sm: "100px", md: "100px" },
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               overflow: "hidden",
-              borderRadius: "8px", // Optional rounded corners
+              borderRadius: "8px",
             }}
           >
             <img
@@ -55,7 +54,7 @@ const BreathingComponent = () => {
               style={{
                 maxWidth: "100%",
                 maxHeight: "100%",
-                objectFit: "contain", // Ensures the image is fully visible
+                objectFit: "contain",
               }}
             />
           </Box>
@@ -65,7 +64,7 @@ const BreathingComponent = () => {
       <Typography
         sx={{
           fontWeight: "bold",
-          fontSize: { xs: "24px", md: "30px" }, // Adjust font size for smaller screens
+          fontSize: { xs: "24px", md: "30px" },
           textAlign: "center",
           display: "flex",
           justifyContent: "center",
@@ -77,17 +76,15 @@ const BreathingComponent = () => {
         DISCOVER THE HIDDEN POWER OF YOUR BREATH
       </Typography>
 
-      {/* Main Section - Left (Image) & Right (Text + CTA) */}
       <Grid
         container
         sx={{
           minHeight: "500px",
           alignItems: "center",
           overflow: "hidden",
-          flexDirection: { xs: "column", md: "row" }, // Stacked on small screens
+          flexDirection: { xs: "column", md: "row" },
         }}
       >
-        {/* Left Side - Image */}
         <Grid
           item
           xs={12}
@@ -97,7 +94,7 @@ const BreathingComponent = () => {
             alignItems: "center",
             justifyContent: "center",
             height: "100%",
-            mb: { xs: 3, md: 0 }, // Margin for mobile view
+            mb: { xs: 3, md: 0 },
           }}
         >
           <Box
@@ -108,12 +105,11 @@ const BreathingComponent = () => {
               width: "100%",
               height: "auto",
               maxHeight: "522px",
-              objectFit: "cover", // Ensures image fills the container proportionally
+              objectFit: "cover",
             }}
           />
         </Grid>
 
-        {/* Right Side - Content */}
         <Grid
           item
           xs={12}
@@ -122,28 +118,25 @@ const BreathingComponent = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            height: "74vh", // Set height to adjust based on content
-            maxHeight: "auto", // Limit maximum height
+            height: "74vh",
+            maxHeight: "auto",
             background: "#E0F2F7",
-            padding: "0px", // Add consistent padding for spacing
+            padding: "0px",
           }}
         >
-          {/* Text Content */}
           <Box sx={{ padding: "16px" }}>
-            {/* Reduced padding */}
             <Typography
               variant="h6"
               sx={{
                 color: "#666666",
-                marginBottom: "12px", // Reduced margin
-                lineHeight: "1.4", // Slightly reduced line height
+                marginBottom: "12px",
+                lineHeight: "1.4",
               }}
             >
               Your breathing isn&apos;t just about oxygen in and carbon dioxide
               out— it&apos;s a complex behavior shaped by triggers, habits, and
               physiology. When misaligned, these habits can:
             </Typography>
-            {/* Points Section */}
             {points.map((point, index) => (
               <Grid
                 container
@@ -151,8 +144,8 @@ const BreathingComponent = () => {
                 spacing={2}
                 alignItems="center"
                 sx={{
-                  marginBottom: "12px", // Reduced margin
-                  padding: "4px", // Reduced padding
+                  marginBottom: "12px",
+                  padding: "4px",
                 }}
               >
                 <Grid item>
@@ -161,9 +154,9 @@ const BreathingComponent = () => {
                     src={icons[index]}
                     alt={`Point ${index + 1}`}
                     sx={{
-                      width: "36px", // Reduced size
-                      height: "36px", // Reduced size
-                      padding: "4px", // Reduced padding
+                      width: "36px",
+                      height: "36px",
+                      padding: "4px",
                     }}
                   />
                 </Grid>
@@ -186,10 +179,9 @@ const BreathingComponent = () => {
             ))}
           </Box>
 
-          {/* CTA Section */}
           <Box
             sx={{
-              padding: "12px", // Reduced padding
+              padding: "12px",
               background: "#6bb5b5",
               textAlign: "center",
             }}
@@ -197,9 +189,9 @@ const BreathingComponent = () => {
             <Typography
               variant="h6"
               sx={{
-                fontWeight: "500", // Reduced font weight
+                fontWeight: "500",
                 color: "white",
-                lineHeight: "1.4", // Slightly reduced line height
+                lineHeight: "1.4",
                 ml: 2,
               }}
               align="left"

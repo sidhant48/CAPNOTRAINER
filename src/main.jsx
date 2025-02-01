@@ -6,20 +6,20 @@ import { ThemeProvider, createTheme } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
-      main: "#ff5722", // Custom Orange
+      main: "#ff5722",
     },
     secondary: {
-      main: "#673ab7", // Custom Purple
+      main: "#673ab7",
     },
   },
   typography: {
     fontFamily: "Arial, sans-serif",
     h1: {
-      fontSize: "2.5rem", // 40px
+      fontSize: "2.5rem",
       fontWeight: 700,
     },
     body1: {
-      fontSize: "1.2rem", // 20px
+      fontSize: "1.2rem",
     },
   },
 });

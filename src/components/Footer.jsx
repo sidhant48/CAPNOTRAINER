@@ -11,10 +11,9 @@ const Footer = () => {
       <Container>
         <Grid
           container
-          spacing={{ xs: 3, sm: 4, md: 25 }} // Equal spacing between grids
-          justifyContent="space-between" // Equal space between grid items
+          spacing={{ xs: 3, sm: 4, md: 25 }}
+          justifyContent="space-between"
         >
-          {/* Logo and description */}
           <Grid item xs={12} sm={4}>
             <Box display="flex" flexDirection="column" alignItems="flex-start">
               <Box
@@ -35,7 +34,6 @@ const Footer = () => {
             </Box>
           </Grid>
 
-          {/* Contact section */}
           <Grid item xs={12} sm={4}>
             <Box display="flex" flexDirection="column" alignItems="flex-start">
               <Typography variant="h6" fontWeight="bold" mb={1}>
@@ -53,7 +51,6 @@ const Footer = () => {
             </Box>
           </Grid>
 
-          {/* Social media links */}
           <Grid item xs={12} sm={4}>
             <Box display="flex" flexDirection="column" alignItems="flex-start">
               <Typography variant="h6" fontWeight="bold" mb={1}>
@@ -89,7 +86,6 @@ const Footer = () => {
           </Grid>
         </Grid>
 
-        {/* Footer copyright */}
         <Box mt={6} textAlign="center">
           <Typography variant="body2" color="textSecondary">
             @2024 BreatheMatters. All rights reserved.

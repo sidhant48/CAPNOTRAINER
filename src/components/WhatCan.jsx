@@ -31,38 +31,35 @@ const WhatCan = () => {
       </Typography>
 
       <Grid container spacing={2}>
-        {/* First Container */}
         <Grid item xs={12} sm={6} md={3}>
           <Box
             display="flex"
             flexDirection="column"
-            height="470px" // Reduced the height slightly
+            height="470px"
             borderRadius="8px"
             overflow="hidden"
             boxShadow={2}
           >
-            {/* Image */}
             <Box
               component="img"
               src={img1}
               alt="Image 1"
               sx={{
                 width: "100%",
-                height: "60%", // Adjusted the image height to take up 52% of the container's height
+                height: "60%",
                 objectFit: "cover",
                 objectPosition: "top",
               }}
             />
-            {/* Text Container */}
             <Box
               sx={{
                 backgroundColor: "teal",
                 color: "white",
-                height: "40%", // Adjusted the text height to take up 48% of the container's height
+                height: "40%",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                paddingY: 1, // Reduced vertical padding
+                paddingY: 1,
                 paddingX: 2,
               }}
             >
@@ -77,12 +74,11 @@ const WhatCan = () => {
           </Box>
         </Grid>
 
-        {/* Second Container */}
         <Grid item xs={12} sm={6} md={3}>
           <Box
             display="flex"
             flexDirection="column"
-            height="470px" // Reduced the height slightly
+            height="470px"
             borderRadius="8px"
             overflow="hidden"
             boxShadow={2}
@@ -102,11 +98,11 @@ const WhatCan = () => {
               sx={{
                 backgroundColor: "teal",
                 color: "white",
-                height: "40%", // Adjusted the text height to take up 48% of the container's height
+                height: "40%",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                paddingY: 1, // Reduced vertical padding
+                paddingY: 1,
                 paddingX: 2,
               }}
             >
@@ -121,12 +117,11 @@ const WhatCan = () => {
           </Box>
         </Grid>
 
-        {/* Third Container */}
         <Grid item xs={12} sm={6} md={3}>
           <Box
             display="flex"
             flexDirection="column"
-            height="470px" // Reduced the height slightly
+            height="470px"
             borderRadius="8px"
             overflow="hidden"
             boxShadow={2}
@@ -137,7 +132,7 @@ const WhatCan = () => {
               alt="Image 3"
               sx={{
                 width: "100%",
-                height: "60%", // Adjusted the image height to take up 52% of the container's height
+                height: "60%",
                 objectFit: "cover",
                 objectPosition: "center",
               }}
@@ -146,11 +141,11 @@ const WhatCan = () => {
               sx={{
                 backgroundColor: "teal",
                 color: "white",
-                height: "40%", // Adjusted the text height to take up 48% of the container's height
+                height: "40%",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                paddingY: 1, // Reduced vertical padding
+                paddingY: 1,
                 paddingX: 2,
               }}
             >
@@ -165,12 +160,11 @@ const WhatCan = () => {
           </Box>
         </Grid>
 
-        {/* Fourth Container */}
         <Grid item xs={12} sm={6} md={3}>
           <Box
             display="flex"
             flexDirection="column"
-            height="470px" // Reduced the height slightly
+            height="470px"
             borderRadius="8px"
             overflow="hidden"
             boxShadow={2}
@@ -181,7 +175,7 @@ const WhatCan = () => {
               alt="Image 4"
               sx={{
                 width: "100%",
-                height: "60%", // Adjusted the image height to take up 52% of the container's height
+                height: "60%",
                 objectFit: "cover",
                 objectPosition: "center",
               }}
@@ -190,11 +184,11 @@ const WhatCan = () => {
               sx={{
                 backgroundColor: "teal",
                 color: "white",
-                height: "40%", // Adjusted the text height to take up 48% of the container's height
+                height: "40%",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "center",
-                paddingY: 1, // Reduced vertical padding
+                paddingY: 1,
                 paddingX: 2,
               }}
             >
