@@ -70,7 +70,8 @@ const BreathingComponent = () => {
           justifyContent: "center",
           alignItems: "center",
           height: "100%",
-          p: 2,
+          p: 0,
+          mb: { xs: 2, sm: 3, md: -10 },
         }}
       >
         DISCOVER THE HIDDEN POWER OF YOUR BREATH
@@ -79,10 +80,11 @@ const BreathingComponent = () => {
       <Grid
         container
         sx={{
-          minHeight: "500px",
+          minHeight: "100vh",
           alignItems: "center",
           overflow: "hidden",
           flexDirection: { xs: "column", md: "row" },
+          boxSizing: "border-box",
         }}
       >
         <Grid
@@ -93,8 +95,9 @@ const BreathingComponent = () => {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            height: "100%",
+            height: { xs: "auto", md: "100%" },
             mb: { xs: 3, md: 0 },
+            boxSizing: "border-box",
           }}
         >
           <Box
@@ -106,6 +109,7 @@ const BreathingComponent = () => {
               height: "auto",
               maxHeight: "522px",
               objectFit: "cover",
+              boxSizing: "border-box",
             }}
           />
         </Grid>
@@ -118,10 +122,11 @@ const BreathingComponent = () => {
             display: "flex",
             flexDirection: "column",
             justifyContent: "space-between",
-            height: "74vh",
+            height: { xs: "auto", md: "74vh", lg: "70vh", xl: "74vh" },
             maxHeight: "auto",
             background: "#E0F2F7",
             padding: "0px",
+            boxSizing: "border-box",
           }}
         >
           <Box sx={{ padding: "16px" }}>
