@@ -37,7 +37,7 @@ const WhatCan = () => {
             display="flex"
             flexDirection="column"
             height="470px" // Reduced the height slightly
-            borderRadius="12px"
+            borderRadius="8px"
             overflow="hidden"
             boxShadow={2}
           >
@@ -83,7 +83,7 @@ const WhatCan = () => {
             display="flex"
             flexDirection="column"
             height="470px" // Reduced the height slightly
-            borderRadius="12px"
+            borderRadius="8px"
             overflow="hidden"
             boxShadow={2}
           >
@@ -127,7 +127,7 @@ const WhatCan = () => {
             display="flex"
             flexDirection="column"
             height="470px" // Reduced the height slightly
-            borderRadius="12px"
+            borderRadius="8px"
             overflow="hidden"
             boxShadow={2}
           >
@@ -171,7 +171,7 @@ const WhatCan = () => {
             display="flex"
             flexDirection="column"
             height="470px" // Reduced the height slightly
-            borderRadius="12px"
+            borderRadius="8px"
             overflow="hidden"
             boxShadow={2}
           >

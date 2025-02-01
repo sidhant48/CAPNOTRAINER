@@ -124,7 +124,7 @@ const BreathingComponent = () => {
             justifyContent: "space-between",
             height: "74vh", // Set height to adjust based on content
             maxHeight: "800px", // Limit maximum height
-            background: "#f7f9fc",
+            background: "#E0F2F7",
             padding: "0px", // Add consistent padding for spacing
           }}
         >
