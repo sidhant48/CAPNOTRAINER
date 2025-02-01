@@ -7,7 +7,7 @@ import img4 from "../assets/33.png";
 const KeyFeature = () => {
   const features = [
     {
-      img: img1, // Replace with actual image URL
+      img: img1,
       title: "Real-Time Monitoring",
       subtitle:
         "Track your breathing metrics like CO2 concentration, breathing rate, and rhythm.",
@@ -57,7 +57,7 @@ const KeyFeature = () => {
                 component="img"
                 src={feature.img}
                 alt={feature.title}
-                sx={{ width: "80px", height: "auto", mb: 1 }} // Adjust image size
+                sx={{ width: "80px", height: "auto", mb: 1 }}
               />
               <Typography variant="h6" fontWeight={500}>
                 {feature.title}
