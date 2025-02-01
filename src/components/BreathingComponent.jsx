@@ -123,7 +123,7 @@ const BreathingComponent = () => {
             flexDirection: "column",
             justifyContent: "space-between",
             height: "74vh", // Set height to adjust based on content
-            maxHeight: "800px", // Limit maximum height
+            maxHeight: "auto", // Limit maximum height
             background: "#E0F2F7",
             padding: "0px", // Add consistent padding for spacing
           }}
